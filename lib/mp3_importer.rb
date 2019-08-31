@@ -12,6 +12,11 @@ class MP3Importer
   def files 
     @files = []
     file = dir.entries(@path)
-    
+    file.each do |file|
+      if file.include?("mp3")
+        @files << file 
+      end
+    end
+    @files 
   end
 end 
