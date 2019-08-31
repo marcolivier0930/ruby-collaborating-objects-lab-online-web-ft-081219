@@ -12,5 +12,6 @@ class MP3Importer
   def files 
     @files = []
     file = dir.entries(@path)
+    
   end
 end 
